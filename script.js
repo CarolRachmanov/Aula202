@@ -24,19 +24,31 @@ let idade = (prompt ('Quantos anos você tem?'))
 let filmes = ["Kung Fu Panda", "A maldição da Casa Assombrada", "Duro de matar", "Tamasha", "High School Musical"
 ]
 
-if (idade >=18) {
-    alert( `Você pode assistir aos filmes ${filmes}.`)
-}
+// if (idade >=18) {
+//     alert( `Você pode assistir aos filmes ${filmes}.`)
+// }
 
-if (idade <18 && idade >=16) {
-  alert(`Você pode assitir todos os filmes, exceto ${filmes [(2)]}.`)
+// if (idade <18 && idade >=16) {
+//   alert(`Você pode assitir todos os filmes, exceto ${filmes [(2)]}.`)
   
-  }
+//   }
 
-if (idade <16 && idade >=14) {
-    alert(`Você pode assistir aos filmes ${filmes[(0)]} ${filmes[(3)]} e ${filmes[(4)]}.`)
-}
+// if (idade <16 && idade >=14) {
+//     alert(`Você pode assistir aos filmes ${filmes[(0)]} ${filmes[(3)]} e ${filmes[(4)]}.`)
+// }
 
-else {
-    alert (`Você só pode assistir aos filmes ${filmes[(0)]} e ${filmes[(4)]}.`)
+//  if (idade <14) {
+//     alert (`Você só pode assistir aos filmes ${filmes[(0)]} e ${filmes[(4)]}.`)
+//  }
+
+//  else {
+//     alert (`Você só pode assistir aos filmes ${filmes[(0)]} e ${filmes[(4)]}.`)
+//  }
+
+
+for (let item in filmes) {
+    if ( idade >=18) {
+        console.log(`Você pode assistir aos filmes:${filmes}`)
+        // Podia usar com alert também, mas a implementação do que eu fiz foi péssima, acabou dando muito parecido. //
+    }
 }
